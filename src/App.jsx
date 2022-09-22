@@ -29,8 +29,10 @@ function App() {
           setBeers(response);
         }    
         setLoading(false);
+        return true;
      }else{
       setLoading(false);
+      return false;
      }
   }
 
@@ -38,7 +40,7 @@ function App() {
     const { page, perPage } = pagination;
     let currPage = page;
     currPage++;
-    fetchBeers(currPage, perPage);
+    if(fetchBeers(currPage, perPage)){
   
       setPagination({
         ...pagination,
@@ -47,7 +49,8 @@ function App() {
 
       setTimeout(()=>{
         onScrollToView();
-      }, 100)
+      }, 500)
+    }
      
 
   }

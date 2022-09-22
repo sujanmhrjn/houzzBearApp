@@ -49,7 +49,7 @@ function App() {
 
       setTimeout(()=>{
         onScrollToView();
-      }, 500)
+      }, 200)
     }
      
 

@@ -1,0 +1,22 @@
+.c-loadmore {
+  text-align: center;
+  button {
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    color: #405ee6;
+    svg {
+      margin-left: 5px;
+    }
+    svg,
+    svg * {
+      fill: #405ee6;
+      stroke: #405ee6;
+    }
+  }
+
+  .loading {
+    max-width: 30px;
+  }
+}

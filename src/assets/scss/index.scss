@@ -1,0 +1,54 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^='col-'] {
+  padding: 0 15px;
+}
+.col-12 {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .col-md-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.houz-app {
+  padding: 45px 0;
+}
